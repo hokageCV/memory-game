@@ -1,36 +1,64 @@
 import { v4 as uuid } from 'uuid' ;
 import React, { useState, useEffect } from 'react';
 import { imageData } from './imageData';
+import { wait } from '@testing-library/user-event/dist/utils';
 
 
 export default function ImageGrid({score, setScore, highScore, setHighScore}){
   const [imageArray, setImageArray] = useState(imageData);
 
-  // changes the isSelected property of clicked image to true
-  function handleClick(event){
-    const name = event.target.alt ;
+  // update score
+  function updateScore(name){
+    let imgIndex = imageArray.findIndex(obj => obj.name === name)
+    if(imageArray[imgIndex].isSelected){
+      setScore(0);
+      if(score>highScore) setHighScore(score);
+    }
+    else setScore(sc=>sc+1)
 
-    setImageArray(prevData =>{
-      const changed = prevData.filter(i=> i.name===name)
-      console.log( changed );
+    // imageArray.map(obj=>{
+    //   if(obj.name===name){
+    //     if(obj.isSelected) {
+    //       setScore(0);
+    //       if(score>highScore) setHighScore(score);
+    //     }
+    //     else setScore(sc=>sc+1)
+    //   }
+    // })
+  }
 
-      return[
-        ...prevData,
-        changed.isSelected = true
-      ]
-    })
+  //  update object in array: change the isSelected property of clicked object to true
+  function toggleIsSelected(name){
+    let imgIndex = imageArray.findIndex(obj => obj.name === name)
+    imageArray[imgIndex] = {...imageArray[imgIndex], isSelected:true}
+
+    // imageArray.map(obj=>{
+    //   if(obj.name === name) 
+    //     return {...obj, isSelected:true};
+    //   return obj;
+    // })
   }
 
   // array shuffler
   function shuffleImages(){
-    const copyImages = [...imageArray]
-    const shuffledImages = copyImages.sort(()=>(0.5-Math.random))
+      const copyImages = [...imageArray]
+      const shuffledImages = copyImages.sort(()=>(0.5-Math.random()))
+  
+      setImageArray(shuffledImages)
+    }
 
-    setImageArray(shuffledImages)
+  //
+  function handleClick(event){
+    // get name of the clicked image
+    const name = event.target.alt ;
+    
+    updateScore(name);
+    wait(100);
+    toggleIsSelected(name);
   }
 
-  //shuffles the grid if score is changed
-  useEffect(shuffleImages,[score])
+  //shuffles the grid whenever the score is changed
+  useEffect(shuffleImages(),[score])
 
 
   // render image
