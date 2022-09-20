@@ -58,7 +58,7 @@ export default function ImageGrid({score, setScore, highScore, setHighScore}){
   }
 
   //shuffles the grid whenever the score is changed
-  useEffect(shuffleImages(),[score])
+  useEffect(shuffleImages,[score])
 
 
   // render image
