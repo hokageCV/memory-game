@@ -16,13 +16,3 @@
 
   export default {imageData};
 
-
-
-
-  // working code
-// {
-//  imageArray.map( source => <div className="col-4 h-5">
-//     <img src={source.path} key={uuid()} alt=""  className="w-50 h-50" onClick={handleClick} />
-//     <h6>{source.name}</h6>
-//   </div>  ) 
-//  }

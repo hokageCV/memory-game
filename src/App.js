@@ -1,8 +1,8 @@
 import ImageGrid from './components/imageGrid';
 import Header from './components/header';
 import ScoreBoard from './components/scoreBoard';
+import React, {useState } from 'react';
 import './style/style.css'
-import React, {useState, useEffect} from 'react';
 
 function App() {
   const [score, setScore] = useState(0);

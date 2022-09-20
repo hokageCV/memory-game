@@ -10,33 +10,19 @@ export default function ImageGrid({score, setScore, highScore, setHighScore}){
   // update score
   function updateScore(name){
     let imgIndex = imageArray.findIndex(obj => obj.name === name)
+    // if image is already selected, reset score and update highscore
     if(imageArray[imgIndex].isSelected){
       setScore(0);
       if(score>highScore) setHighScore(score);
     }
+    // if image is not selected, increase score
     else setScore(sc=>sc+1)
-
-    // imageArray.map(obj=>{
-    //   if(obj.name===name){
-    //     if(obj.isSelected) {
-    //       setScore(0);
-    //       if(score>highScore) setHighScore(score);
-    //     }
-    //     else setScore(sc=>sc+1)
-    //   }
-    // })
   }
 
   //  update object in array: change the isSelected property of clicked object to true
   function toggleIsSelected(name){
     let imgIndex = imageArray.findIndex(obj => obj.name === name)
     imageArray[imgIndex] = {...imageArray[imgIndex], isSelected:true}
-
-    // imageArray.map(obj=>{
-    //   if(obj.name === name) 
-    //     return {...obj, isSelected:true};
-    //   return obj;
-    // })
   }
 
   // array shuffler

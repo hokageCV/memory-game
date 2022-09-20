@@ -1,11 +1,11 @@
 :root{
-    --white:#F2F2F2;
+    --white:#ffedcc;
     --orange: #F96D00;
     --lightBlack : #393E46;
     --darkBlack: #222831;
 }
 
-body{
+.App{
     background-color: var(--white);
 }
 .header{
@@ -14,6 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .scoreBoard{
     color: var(--lightBlack);
