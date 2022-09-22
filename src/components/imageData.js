@@ -5,11 +5,9 @@
     {path: require("../images/Lee.png"), name:"Lee", isSelected:false },
     {path: require("../images/Neji.png"), name:"Neji", isSelected:false },
     {path: require("../images/Pain.png"), name:"Pain", isSelected:false },
-    {path: require("../images/Sai.png"), name:"Sai", isSelected:false },
     {path: require("../images/Sasuke.png"), name:"Sasuke", isSelected:false },
     {path: require("../images/Shikamaru.png"), name:"Shikamaru", isSelected:false },
     {path: require("../images/Shino.png"), name:"Shino", isSelected:false },
-    {path: require("../images/Tobi.png"), name:"Tobi", isSelected:false },
     {path: require("../images/Madara.png"), name:"Madara", isSelected:false },
     {path: require("../images/Kakashi.png"), name:"Kakashi", isSelected:false },
   ];

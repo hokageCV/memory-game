@@ -1,12 +1,12 @@
 :root{
-    --white:#ffedcc;
-    --orange: #F96D00;
+    --white: #e8d0b4;
+    --orange: #f66212;
     --lightBlack : #393E46;
     --darkBlack: #222831;
 }
-
 .App{
     background-color: var(--white);
+    height: 100vh;
 }
 .header{
     color: var(--orange) ;
@@ -15,20 +15,73 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+.header p{
+    font-size: 30px;
 }
 .scoreBoard{
     color: var(--lightBlack);
+    font-size: 40px;
 }
 
-/* for image cards */
-.row div{
-    /* border: goldenrod 2px solid; */
-    
-    width: 200px;
-    height:200px;
-    padding: 20px;
+/* for images */
+.imgs-container{
+   margin: 10px auto;
+   padding: 10px;
+   border: goldenrod 2px solid;
+
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
+    gap: 5px;
+    overflow: hidden;
+
+    /* imgDivs ko center karne ke liye */
+    justify-items: center;  
 }
-.row img{
+
+.imgDiv{
+    border: goldenrod 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 700;
+    cursor: pointer;
+    
+    width: 300px;
+    height:300px;
+
+    padding: 20px;
+    margin: 10px;
+}
+.imgs-container img{
     width: 100%;
     height: 100%;
 }
+
+@media screen and (max-width: 1025px) {
+    .imgs-container{
+        grid-template-columns:  repeat(3, 1fr);
+    }
+}
+
+/* .popup{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid red;
+    background-color: wheat;
+    z-index: 20;
+}
+
+.popupParent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    padding:5px; */
+/* } */

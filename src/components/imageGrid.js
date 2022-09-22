@@ -1,11 +1,13 @@
 import { v4 as uuid } from 'uuid' ;
 import React, { useState, useEffect } from 'react';
 import { imageData } from './imageData';
-import { wait } from '@testing-library/user-event/dist/utils';
+import {useWindowSize} from  '@react-hook/window-size'
+import Confetti from 'react-confetti'
 
 
 export default function ImageGrid({score, setScore, highScore, setHighScore}){
   const [imageArray, setImageArray] = useState(imageData);
+  const { width, height } = useWindowSize();
 
   // update score
   function updateScore(name){
@@ -13,10 +15,15 @@ export default function ImageGrid({score, setScore, highScore, setHighScore}){
     // if image is already selected, reset score and update highscore
     if(imageArray[imgIndex].isSelected){
       setScore(0);
-      if(score>highScore) setHighScore(score);
+      if(score>highScore) {
+        setHighScore(score)
+      };
     }
     // if image is not selected, increase score
-    else setScore(sc=>sc+1)
+    else {
+      setScore(sc=>sc+1)
+    }
+
   }
 
   //  update object in array: change the isSelected property of clicked object to true
@@ -39,7 +46,6 @@ export default function ImageGrid({score, setScore, highScore, setHighScore}){
     const name = event.target.alt ;
     
     updateScore(name);
-    wait(100);
     toggleIsSelected(name);
   }
 
@@ -49,10 +55,12 @@ export default function ImageGrid({score, setScore, highScore, setHighScore}){
 
   // render image
   return (
-      <div className="row">
+      <div className="imgs-container">
+        {score===10 && <Confetti width={width} height={height} />}
         {imageArray.map(img=>(
-          <div key={uuid()}>
+          <div key={uuid()} className="imgDiv">
             <img src={img.path}  alt={img.name}  onClick={handleClick}   />
+            <p><small>{img.name}</small></p>
           </div>
         ))}
       </div>
