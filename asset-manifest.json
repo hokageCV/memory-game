@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.14d7b41f.css",
-    "main.js": "/memory-game/static/js/main.015e14b8.js",
+    "main.css": "/memory-game/static/css/main.9a973795.css",
+    "main.js": "/memory-game/static/js/main.2485d1fc.js",
     "static/media/Madara.png": "/memory-game/static/media/Madara.7c82596d2647903112d1.png",
     "static/media/Shino.png": "/memory-game/static/media/Shino.a1dabb019a077514f699.png",
     "static/media/Sasuke.png": "/memory-game/static/media/Sasuke.123e44f354a4e94eb496.png",
@@ -13,11 +13,11 @@
     "static/media/Shikamaru.png": "/memory-game/static/media/Shikamaru.f629f56c0802ba6fc29c.png",
     "static/media/Kakashi.png": "/memory-game/static/media/Kakashi.3074889b221bfc38cee1.png",
     "index.html": "/memory-game/index.html",
-    "main.14d7b41f.css.map": "/memory-game/static/css/main.14d7b41f.css.map",
-    "main.015e14b8.js.map": "/memory-game/static/js/main.015e14b8.js.map"
+    "main.9a973795.css.map": "/memory-game/static/css/main.9a973795.css.map",
+    "main.2485d1fc.js.map": "/memory-game/static/js/main.2485d1fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.14d7b41f.css",
-    "static/js/main.015e14b8.js"
+    "static/css/main.9a973795.css",
+    "static/js/main.2485d1fc.js"
   ]
 }
