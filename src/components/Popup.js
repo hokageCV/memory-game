@@ -6,7 +6,6 @@ export default function Popup ({reset}) {
         <div className='popupParent'>
             <div className='popup'>
                 <h1> You Won</h1>
-                {/* <button type='button' onClick={()=>{reset()}}>Restart game</button> */}
                 <button type='button' onClick={reset}>Restart game</button>
             </div>
         </div>

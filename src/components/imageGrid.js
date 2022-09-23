@@ -5,13 +5,14 @@ import {useWindowSize} from  '@react-hook/window-size'
 import Confetti from 'react-confetti'
 
 
-export default function ImageGrid({score, setScore, highScore, setHighScore}){
+export default function ImageGrid({score, setScore, highScore, setHighScore, target}){
   const [imageArray, setImageArray] = useState(imageData);
   const { width, height } = useWindowSize();
 
   // update score
   function updateScore(name){
     let imgIndex = imageArray.findIndex(obj => obj.name === name)
+
     // if image is already selected, reset score and update highscore
     if(imageArray[imgIndex].isSelected){
       setScore(0);
@@ -56,7 +57,7 @@ export default function ImageGrid({score, setScore, highScore, setHighScore}){
   // render image
   return (
       <div className="imgs-container">
-        {score===10 && <Confetti width={width} height={height} />}
+        {score===target && <Confetti width={width} height={height} />}
         {imageArray.map(img=>(
           <div key={uuid()} className="imgDiv">
             <img src={img.path}  alt={img.name}  onClick={handleClick}   />
