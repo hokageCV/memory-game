@@ -18,11 +18,12 @@
 
 }
 .header p{
-    font-size: 30px;
+    font-size: 20px;
 }
 .scoreBoard{
     color: var(--lightBlack);
-    font-size: 40px;
+    font-size: 30px;
+    width: 40%;
 }
 
 /* for images */
@@ -48,8 +49,8 @@
     font-weight: 700;
     cursor: pointer;
     
-    width: 300px;
-    height:300px;
+    width: 120px;
+    height:120px;
 
     padding: 20px;
     margin: 10px;

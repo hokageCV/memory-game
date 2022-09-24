@@ -1,16 +1,16 @@
-  // array of objects containing paths to images
+// array of objects containing paths to images
  export  const imageData = [
-    {path: require("../images/Boruto.png"), name:"Boruto", isSelected:false },
-    {path: require("../images/Naruto.png"), name:"Naruto", isSelected:false },
-    {path: require("../images/Lee.png"), name:"Lee", isSelected:false },
-    {path: require("../images/Neji.png"), name:"Neji", isSelected:false },
-    {path: require("../images/Pain.png"), name:"Pain", isSelected:false },
-    {path: require("../images/Sasuke.png"), name:"Sasuke", isSelected:false },
-    {path: require("../images/Shikamaru.png"), name:"Shikamaru", isSelected:false },
-    {path: require("../images/Shino.png"), name:"Shino", isSelected:false },
-    {path: require("../images/Madara.png"), name:"Madara", isSelected:false },
-    {path: require("../images/Kakashi.png"), name:"Kakashi", isSelected:false },
-  ];
+    {path: require("../images/fruits/apple.png"), name:"Apple", isSelected:false },
+    {path: require("../images/fruits/banana.png"), name:"Bananas", isSelected:false },
+    {path: require("../images/fruits/cherries.png"), name:"Cherries", isSelected:false },
+    {path: require("../images/fruits/grapes.png"), name:"Grapes", isSelected:false },
+    {path: require("../images/fruits/mango.png"), name:"Mango", isSelected:false },   
+    {path: require("../images/fruits/orange.png"), name:"Orange", isSelected:false },
+    {path: require("../images/fruits/pear.png"), name:"Pear", isSelected:false },  
+    {path: require("../images/fruits/pineapple.png"), name:"Pineapple", isSelected:false },
+    {path: require("../images/fruits/strawberry.png"), name:"Strawberry", isSelected:false },
+    {path: require("../images/fruits/watermelon.png"), name:"Watermelon", isSelected:false },
+  ];   
 
   export default {imageData};
 
