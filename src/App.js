@@ -25,9 +25,13 @@ function App() {
     setPopup(false)
   }
 
+  function handleTarget(){
+    setTarget(prev => prev===10?5:10)
+  }
+
   return (
     <div className="App">
-      <Header />
+      <Header handleTarget={handleTarget} />
       <ScoreBoard  score={score} highScore={highScore} />
 
       { popup ? ( <Popup reset={reset} /> ) : null }
