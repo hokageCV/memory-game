@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.9a973795.css",
-    "main.js": "/memory-game/static/js/main.2485d1fc.js",
-    "static/media/Madara.png": "/memory-game/static/media/Madara.7c82596d2647903112d1.png",
-    "static/media/Shino.png": "/memory-game/static/media/Shino.a1dabb019a077514f699.png",
-    "static/media/Sasuke.png": "/memory-game/static/media/Sasuke.123e44f354a4e94eb496.png",
-    "static/media/Neji.png": "/memory-game/static/media/Neji.0a81e79061f27630acfb.png",
-    "static/media/Boruto.png": "/memory-game/static/media/Boruto.58e1cc4728a847914a0f.png",
-    "static/media/Lee.png": "/memory-game/static/media/Lee.53159312c8a0c9326520.png",
-    "static/media/Naruto.png": "/memory-game/static/media/Naruto.a0c093901855c248b97d.png",
-    "static/media/Pain.png": "/memory-game/static/media/Pain.88c66fbe101db0648920.png",
-    "static/media/Shikamaru.png": "/memory-game/static/media/Shikamaru.f629f56c0802ba6fc29c.png",
-    "static/media/Kakashi.png": "/memory-game/static/media/Kakashi.3074889b221bfc38cee1.png",
+    "main.css": "/memory-game/static/css/main.e9febc70.css",
+    "main.js": "/memory-game/static/js/main.dfdec18c.js",
+    "static/media/grapes.png": "/memory-game/static/media/grapes.1b91e8ea219d27bf1137.png",
+    "static/media/banana.png": "/memory-game/static/media/banana.e2208281acda2b4e5edb.png",
+    "static/media/mango.png": "/memory-game/static/media/mango.48a687a11cbfb8a8b875.png",
+    "static/media/strawberry.png": "/memory-game/static/media/strawberry.8ec7fc68ff9f77599d41.png",
+    "static/media/pineapple.png": "/memory-game/static/media/pineapple.d04a9f5bb9910623f2c2.png",
+    "static/media/watermelon.png": "/memory-game/static/media/watermelon.6021347919aa5f610492.png",
+    "static/media/orange.png": "/memory-game/static/media/orange.13091687dadc1ad2d68a.png",
+    "static/media/apple.png": "/memory-game/static/media/apple.3aed0776e9335292e633.png",
+    "static/media/pear.png": "/memory-game/static/media/pear.d2e1bfbcd17a060444a6.png",
+    "static/media/cherries.png": "/memory-game/static/media/cherries.9ea5716e0779cb56fcc5.png",
     "index.html": "/memory-game/index.html",
-    "main.9a973795.css.map": "/memory-game/static/css/main.9a973795.css.map",
-    "main.2485d1fc.js.map": "/memory-game/static/js/main.2485d1fc.js.map"
+    "main.e9febc70.css.map": "/memory-game/static/css/main.e9febc70.css.map",
+    "main.dfdec18c.js.map": "/memory-game/static/js/main.dfdec18c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a973795.css",
-    "static/js/main.2485d1fc.js"
+    "static/css/main.e9febc70.css",
+    "static/js/main.dfdec18c.js"
   ]
 }
