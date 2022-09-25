@@ -14,27 +14,29 @@ function App() {
   const [popup, setPopup] = useState(false);
   const [target, setTarget] = useState(10);
 
-  // if score is 10, display popup 
+  // if score equals target, display popup 
   useEffect(() => {
     if(score === target) setPopup(true) 
   },[score])
 
-  // // reset game from popup
+  // reset game 
   const reset = () => {
     setScore(0)
     setPopup(false)
   }
 
+  // toggle target between 10 & 5
   function handleTarget(){
     setTarget(prev => prev===10?5:10)
   }
 
   return (
     <div className="App">
+      { popup ? ( <Popup reset={reset} /> ) : null }
       <Header handleTarget={handleTarget} />
       <ScoreBoard  score={score} highScore={highScore} />
 
-      { popup ? ( <Popup reset={reset} /> ) : null }
+      
 
       <ImageGrid 
         score={score}
