@@ -8,7 +8,7 @@ import Confetti from 'react-confetti'
 export default function ImageGrid({score, setScore, highScore, setHighScore, target}){
   const [imageArray, setImageArray] = useState(imageData);
   const { width, height } = useWindowSize();
-  
+
   useEffect(() => {
     if(score===target){
       setImageArray(imageData)
@@ -21,10 +21,11 @@ export default function ImageGrid({score, setScore, highScore, setHighScore, tar
 
     // if image is already selected, reset score and update highscore
     if(imageArray[imgIndex].isSelected){
-      setScore(0);
       if(score>highScore) {
         setHighScore(score)
       };
+      setScore(0);
+      setImageArray(imageData)
     }
     // if image is not selected, increase score
     else {
