@@ -1,7 +1,8 @@
 import React from "react";
 
 export default function Header({handleTarget}){
-    const options = [{
+    const options = [
+        {
             label:10,
             value:10
         },{
@@ -9,6 +10,7 @@ export default function Header({handleTarget}){
             value:5
         }
     ]
+    
     return(
         <div className="header">
             <h1 className="text-uppercase">Memory Game</h1>

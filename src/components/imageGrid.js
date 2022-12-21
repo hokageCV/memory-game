@@ -8,9 +8,15 @@ import Confetti from 'react-confetti'
 export default function ImageGrid({score, setScore, highScore, setHighScore, target}){
   const [imageArray, setImageArray] = useState(imageData);
   const { width, height } = useWindowSize();
+  
+  useEffect(() => {
+    if(score===target){
+      setImageArray(imageData)
+    }
+  })
 
-  // update score
   function updateScore(name){
+    
     let imgIndex = imageArray.findIndex(obj => obj.name === name)
 
     // if image is already selected, reset score and update highscore
@@ -54,7 +60,6 @@ export default function ImageGrid({score, setScore, highScore, setHighScore, tar
   useEffect(shuffleImages,[score])
 
 
-  // render image
   return (
       <div className="imgs-container">
         {score===target && <Confetti width={width} height={height} />}

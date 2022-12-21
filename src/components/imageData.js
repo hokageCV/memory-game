@@ -12,5 +12,5 @@
     {path: require("../images/fruits/watermelon.png"), name:"Watermelon", isSelected:false },
   ];   
 
-  export default {imageData};
+
 
