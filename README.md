@@ -1,6 +1,8 @@
 # Memory Game
 A fun and challenging [memory game](https://hokagecv.github.io/memory-game/) 
 
+![Game Image](./src/images/memory_game.png)
+
 
 ## Gameplay
 The objective of the game is to select 5 or 10 images only once, without selecting any image twice. If a user selects an image twice, they lose the game.
