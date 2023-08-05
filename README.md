@@ -1,7 +1,7 @@
 # Memory Game
 A fun and challenging [memory game](https://hokagecv.github.io/memory-game/) 
 
-![Game Image](./src/images/memory_game.png)
+![Game Image](https://res.cloudinary.com/dmtacem5p/image/upload/v1691218622/github/memory_game.png)
 
 
 ## Gameplay
